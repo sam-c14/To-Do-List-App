@@ -125,6 +125,21 @@ em {
     color: #efecea;
   }
 }
+@keyframes shake {
+  0% {
+    transform: translateX(4px);
+  }
+
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 @media (max-width: 1024px) {
   .text {
     width: 80%;

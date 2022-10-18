@@ -30,6 +30,11 @@ function addItem() {
     toDo.push(input.value);
     localStorage.setItem("List", JSON.stringify(toDo));
     start();
+  } else {
+    input.parentElement.style.animation = "shake 0.5s 3";
+    setTimeout(() => {
+      input.parentElement.style.animation = "none";
+    }, 1500);
   }
   input.value = "";
 }
